@@ -7,6 +7,11 @@ const setBackgroundColor = (color) => {
     bgTarget.className = `bg-[${colorName}] p-5 w-[500px] h-[200px] flex items-center justify-center rounded-md border-[5px] border-pink-700`;
 };
 
-changeColor.addEventListener('click', function () {
-    setBackgroundColor(colorInput.value);
+changeColor.addEventListener('click', function (e) {
+    e.preventDefault();
+    if (!colorInput.value) {
+        alert('Please input the color value!');
+    } else {
+        setBackgroundColor(colorInput.value);
+    }
 });
