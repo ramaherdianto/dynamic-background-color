@@ -7,9 +7,9 @@
         <script src="https://cdn.tailwindcss.com"></script>
     </head>
     <body class="bg-slate-800">
-        <div class="min-h-screen p-3 flex flex-col items-center justify-center">
+        <div class="min-h-screen p-3 flex flex-col items-center justify-center gap-5">
             <div
-                class="p-5 bg-pink-600 max-w-2xl h-[200px] flex items-center justify-center rounded-md border-[5px] border-pink-700"
+                class="transition-all duration-[0.5s] ease-linear p-5 bg-pink-600 max-w-2xl h-[200px] flex items-center justify-center rounded-md border-[2px] border-pink-500"
                 id="bg-target"
             >
                 <h1 class="text-white text-center text-2xl font-semibold">
@@ -23,12 +23,12 @@
                     <input
                         type="text"
                         id="color-input"
-                        class="border-2 p-3 w-[300px] transition duration-300 text-slate-500 focus:ring focus:ring-pink-400 focus:outline-none border-slate-300 rounded-lg"
+                        class="border-2 p-3 text-slate-300 w-[300px] border-slate-300 transition duration-300 focus:ring focus:ring-pink-400 focus:outline-none rounded-lg bg-transparent"
                     />
                 </div>
                 <div class="flex items-end">
                     <button
-                        class="transition duration-[0.4s] ease-linear bg-blue-500 px-4 py-3 rounded-md text-white text-lg hover:bg-blue-700"
+                        class="transition duration-[0.4s] ease-linear bg-pink-500 px-4 py-3 rounded-md text-white text-lg hover:bg-pink-600"
                         id="change-color"
                     >
                         Change the color
